@@ -1,0 +1,93 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on 월 1월 20 10:44:58 2020
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   Control.txt
+Data File:      test.csv
+  Bad File:     test.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: ALL
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table ONEROOM, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+NUM                                 FIRST     *   ,       CHARACTER            
+REALTOR                              NEXT     *   ,       CHARACTER            
+AREA                                 NEXT     *   ,       CHARACTER            
+ADRESS                               NEXT     *   ,       CHARACTER            
+FLOOR                                NEXT     *   ,       CHARACTER            
+MONTHLYFEE                           NEXT     *   ,       CHARACTER            
+CHARTER                              NEXT     *   ,       CHARACTER            
+DIFFERENCE_MONTHLYFEE                NEXT     *   ,       CHARACTER            
+DIFFERENCE_CHARTER                   NEXT     *   ,       CHARACTER            
+INSURANCE                            NEXT     *   ,       CHARACTER            
+BUILDING_REGISTRATION                NEXT     *   ,       CHARACTER            
+LAND_LEDGER                          NEXT     *   ,       CHARACTER            
+BUILDING_BOOK                        NEXT     *   ,       CHARACTER            
+NUM_COUNT                            NEXT     *   ,       CHARACTER            
+
+Record 1: Rejected - Error on table ONEROOM, column NUM.
+ORA-01722: invalid number
+
+Record 2162: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2175: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2253: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2267: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2582: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2601: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2605: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2620: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2877: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+Record 2895: Rejected - Error on table ONEROOM.
+ORA-00001: unique constraint (HR.PK_NUM) violated
+
+
+Table ONEROOM:
+  2940 Rows successfully loaded.
+  11 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 231168 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          2951
+Total logical records rejected:        11
+Total logical records discarded:        0
+
+Run began on 월 1월  20 10:44:58 2020
+Run ended on 월 1월  20 10:44:59 2020
+
+Elapsed time was:     00:00:00.90
+CPU time was:         00:00:00.17

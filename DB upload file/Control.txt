@@ -1,0 +1,21 @@
+OPTIONS(LOAD=-1,ERRORS=-1)
+LOAD DATA
+INFILE 'test.csv'
+APPEND INTO TABLE ONEROOM
+FIELDS TERMINATED BY','
+(num,
+realtor,
+area,
+adress,
+floor,
+monthlyfee,
+charter,
+difference_monthlyfee,
+difference_charter,
+insurance,
+building_registration,
+land_ledger,
+building_book,
+num_count
+
+)
